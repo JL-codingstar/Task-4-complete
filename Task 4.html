@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Innovative Home Designs</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="bg-image">
+            <div class="logo-line">
+                <img src="home logo.png" alt="Innovative Home Designs Logo" class="logo"> <!-- Logo Image -->
+                <nav>
+                    <ul>
+                        <li><a href="Task 4.html" class="active">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li class="gallery">
+                            <a href="#">Gallery</a>
+                            <div class="gallery-links">
+                                <a href="sofa set.html">Sofa Set</a>
+                                <a href="dining table.html">Dining Table</a>
+                                <a href="bedroom design.html">Bedroom</a>
+                            </div>
+                        </li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="content-below-logo">
+                <h1>Innovative Home Designs</h1>
+                <p>We design and create innovative furniture for modern homes.</p>
+                <p>Our mission is to provide high-quality, stylish furniture that enhances the beauty of your home.</p>
+                <form class="search-form">
+                    <input type="text" placeholder="Search...">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="about-us-content">
+            <div class="about-us-image">
+                <img src="C:\Users\Besham_Khialani\Documents\Desktop\HTML Work\home.jpg" alt="About Us Image">
+            </div>
+            <div class="about-us-intro">
+                <h2 class="about-us-heading">About Us</h2>
+                <p>At Innovative Home Designs, we are committed to transforming your living spaces.<br>
+                    Our team specializes in creating unique and stylish interiors that reflect your<br>
+                    personality and lifestyle.<br>
+                    We focus on innovative design solutions to enhance functionality and aesthetics.<br>
+                    Every project is tailored to meet your specific needs and preferences.<br>
+                    Discover how we can make your home truly exceptional.</p>
+                <a href="learn-more.html" class="learn-more-button">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="latest-collection">
+        <h2 class="latest-collection-heading">Our Latest Collection</h2>
+    <div class="cards-section">
+        <div class="card">
+            <img src="C:\Users\Besham_Khialani\OneDrive\Pictures\sofa set.jpg" alt="Sofa Set">
+            <h3>Sofa Set</h3>
+            <p>Comfortable and stylish sofa sets to enhance your living room.</p>
+            <a href="#" class="view-more-button" onclick="showImage('sofa-set-images')">View More</a>
+        </div>
+        <div class="card">
+            <img src="C:\Users\Besham_Khialani\OneDrive\Pictures\dining table.jpg" alt="Dining Table">
+            <h3>Dining Table</h3>
+            <p>Elegant dining tables perfect for family meals and gatherings.</p>
+            <a href="#" class="view-more-button" onclick="showImage('dining-table-images')">View More</a>
+        </div>
+        <div class="card">
+            <img src="C:\Users\Besham_Khialani\OneDrive\Pictures\bedroom set.jpg" alt="Bedroom Set">
+            <h3>Bedroom Set</h3>
+            <p>Luxurious bedroom sets designed for ultimate comfort.</p>
+            <a href="#" class="view-more-button" onclick="showImage('bedroom-set-images')">View More</a>
+        </div>
+    </div>
+    </section>
+
+    <div id="image-display" class="image-display"></div>
+
+    <script>
+        function showImage(imageType) {
+            let imageDisplay = document.getElementById('image-display');
+            let imageUrl = '';
+
+            switch(imageType) {
+                case 'sofa-set-images':
+                    imageUrl = 'C:\Users\Besham_Khialani\OneDrive\Pictures\sofa set.jpg'; 
+                    break;
+                case 'dining-table-images':
+                    imageUrl = 'C:\Users\Besham_Khialani\OneDrive\Pictures\dining table.jpg'; 
+                    break;
+                case 'bedroom-set-images':
+                    imageUrl = ''; RL
+                    break;
+                default:
+                    imageUrl = 'C:\Users\Besham_Khialani\OneDrive\Pictures\bedroom set.jpg';
+            }
+
+            imageDisplay.innerHTML = `<img src="${imageUrl}" alt="Detailed View" style="width: 100%; height: auto;">`;
+        }
+    </script>
+
+    <section id="contact">
+        <div class="contact-us-content">
+            <div class="contact-us-image">
+                <img src="C:\Users\Besham_Khialani\OneDrive\Pictures\home pic.jpg" alt="Contact Us Image">
+            </div>
+            <div class="contact-us-form">
+                <h2 class="contact-us-heading">Contact Us</h2>
+                <form action="submit-form.php" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="contact">Contact:</label>
+                    <input type="contact" id="contact" name="contact" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit" class="send-message-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+     <section id="happy-customers">
+        <h2 class="happy-customers-heading">Happy Customer's</h2>
+        <div class="customer-cards">
+            <div class="customer-card">
+                <img src="C:\Users\Besham_Khialani\OneDrive\Pictures\customer 1.jpg" alt="Customer 1">
+                <p>Satisfied</p>
+            </div>
+            <div class="customer-card">
+                <img src="C:\Users\Besham_Khialani\OneDrive\Pictures\customer 2.jpg" alt="Customer 2">
+                <p>Satisfied</p>
+            </div>
+            <div class="customer-card">
+                <img src="C:\Users\Besham_Khialani\OneDrive\Pictures\customer 3.jpg" alt="Customer 3">
+                <p>Satisfied</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <h2>Wanted to make your home beautiful?</h2>
+        <div class="social-buttons">
+            <a href="https://github.com/JL-codingstar" class="social-button github">GitHub</a>
+            <a href="https://www.linkedin.com/in/joti-lohana-6471a62a6" class="social-button linkedin">LinkedIn</a>
+            <a href="https://www.facebook.com/profile.php?id=61550243081100&mibextid=kFxxJD" class="social-button facebook">Facebook</a>
+        </div>
+        <p>&copy; 2024 Innovative Home Designs. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+

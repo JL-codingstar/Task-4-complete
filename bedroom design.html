@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bedroom Design- Gallery</title>
+    <style>
+        body {
+            background-color: #ffffff; 
+            margin: 0; 
+            font-family: Arial, sans-serif; 
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            background-color: #333;
+            padding: 10px;
+            color: white; 
+        }
+        .navbar .logo {
+            margin-right: 20px;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;/
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            flex: 1;
+            justify-content: flex-end; 
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 0 15px;
+        }
+        .navbar .dropdown {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            list-style: none;
+            padding: 10px;
+        }
+        .navbar li:hover .dropdown {
+            display: block;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+        }
+        .header h1 {
+            color: #aa8136; 
+        }
+        .gallery {
+            padding: 20px;
+            background-color: white; 
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 15px; 
+        }
+        .gallery-grid img {
+            width: 100%; 
+            height: auto; 
+            border-radius: 5px; 
+        }
+        .footer {
+            background-color: #b99a31; 
+            padding: 20px; 
+            text-align: center;
+            border-top: 1px solid #ddd; 
+        }
+        .footer p {
+            margin: 10px 0; 
+        }
+        .social-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .social-button {
+            padding: 10px 20px;
+            font-size: 1em;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .github {
+            background-color: #333;
+        }
+        .github:hover {
+            background-color: #555;
+        }
+        .linkedin {
+            background-color: #0077b5;
+        }
+        .linkedin:hover {
+            background-color: #005582;
+        }
+        .facebook {
+            background-color: #3b5998;
+        }
+        .facebook:hover {
+            background-color: #2d4373;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <img src="C:\Users\Besham_Khialani\OneDrive\Pictures\home logo.png" alt="Logo" class="logo">
+        <ul>
+            <li><a href="Task 4.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li>
+                <a href="#">Gallery</a>
+                <ul class="dropdown">
+                    <li><a href="sofa set.html">Sofa Set</a></li>
+                    <li><a href="dining table.html">Dining Table</a></li>
+                    <li><a href="bedroom design.html">Bedroom</a></li>
+                </ul>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="header">
+        <h1>Bedroom Design Images</h1>
+    </header>
+
+    <section class="gallery">
+        <div class="gallery-grid">
+            <img src="C:\Users\Besham_Khialani\OneDrive\Pictures\bedroom design 1.jpg" alt="Bedroom Design 1">
+            <img src="C:\Users\Besham_Khialani\OneDrive\Pictures\Bedroom Design 2.jpg" alt="Bedroom Design 2">
+            <img src="C:\Users\Besham_Khialani\OneDrive\Pictures\Bedroom Design 3.jpg" alt="Bedroom Design 3">
+            <img src="C:\Users\Besham_Khialani\OneDrive\Pictures\Bedroom Design 4.jpg" alt="Bedroom Design 4">
+            <img src="C:\Users\Besham_Khialani\OneDrive\Pictures\Bedroom Design 5.jpg" alt="Bedroom Design 5">
+            <img src="C:\Users\Besham_Khialani\OneDrive\Pictures\Bedroom Design 6.jpg" alt="Bedroom Design 6">
+        </div>
+    </section>
+
+    <footer class="footer">
+        <h2>Wanted to make your home beautiful?</h2>
+        <div class="social-buttons">
+            <a href="https://github.com/JL-codingstar" class="social-button github">GitHub</a>
+            <a href="https://www.linkedin.com/in/joti-lohana-6471a62a6" class="social-button linkedin">LinkedIn</a>
+            <a href="https://www.facebook.com/profile.php?id=61550243081100&mibextid=kFxxJD" class="social-button facebook">Facebook</a>
+        </div>
+        <p>&copy; 2024 Innovative Home Designs. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
